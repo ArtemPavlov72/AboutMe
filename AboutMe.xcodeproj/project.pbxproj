@@ -14,7 +14,9 @@
 		886DB0FA26D52D6300235541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886DB0F926D52D6300235541 /* Assets.xcassets */; };
 		886DB0FD26D52D6300235541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886DB0FB26D52D6300235541 /* LaunchScreen.storyboard */; };
 		886DB10526D69BCF00235541 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DB10426D69BCF00235541 /* WelcomeViewController.swift */; };
-		88BC052C26DA7AEA00DB44B1 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC052B26DA7AEA00DB44B1 /* Users.swift */; };
+		88BC052C26DA7AEA00DB44B1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC052B26DA7AEA00DB44B1 /* User.swift */; };
+		88BC053026DBA5C800DB44B1 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC052F26DBA5C800DB44B1 /* AboutMeViewController.swift */; };
+		88BC053226DBDC6D00DB44B1 /* MainInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC053126DBDC6D00DB44B1 /* MainInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		886DB0FC26D52D6300235541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886DB0FE26D52D6300235541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886DB10426D69BCF00235541 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		88BC052B26DA7AEA00DB44B1 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		88BC052B26DA7AEA00DB44B1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		88BC052F26DBA5C800DB44B1 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		88BC053126DBDC6D00DB44B1 /* MainInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				886DB0F426D52D6200235541 /* LoginViewController.swift */,
 				886DB10426D69BCF00235541 /* WelcomeViewController.swift */,
+				88BC052F26DBA5C800DB44B1 /* AboutMeViewController.swift */,
+				88BC053126DBDC6D00DB44B1 /* MainInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,7 +114,7 @@
 		88BC052A26DA74BC00DB44B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				88BC052B26DA7AEA00DB44B1 /* Users.swift */,
+				88BC052B26DA7AEA00DB44B1 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,7 +192,9 @@
 				886DB0F526D52D6200235541 /* LoginViewController.swift in Sources */,
 				886DB10526D69BCF00235541 /* WelcomeViewController.swift in Sources */,
 				886DB0F126D52D6200235541 /* AppDelegate.swift in Sources */,
-				88BC052C26DA7AEA00DB44B1 /* Users.swift in Sources */,
+				88BC053226DBDC6D00DB44B1 /* MainInfoViewController.swift in Sources */,
+				88BC052C26DA7AEA00DB44B1 /* User.swift in Sources */,
+				88BC053026DBA5C800DB44B1 /* AboutMeViewController.swift in Sources */,
 				886DB0F326D52D6200235541 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

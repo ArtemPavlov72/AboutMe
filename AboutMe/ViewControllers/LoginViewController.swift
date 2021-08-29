@@ -8,20 +8,34 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet var userNameText: UITextField!
     @IBOutlet var passwordText: UITextField!
     
-    private let user = "Artem"
-    private let password = "0000"
-        
+    let userOne = User.aboutPerson()
+
+    // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeName = segue.destination as? WelcomeViewController else {return}
-        welcomeName.user = user
+        
+        let tabBarController = segue.destination as! UITabBarController
+        let viewControllers = tabBarController.viewControllers!
+        
+        for viewController in viewControllers {
+            
+            if let welcomeName = viewController as? WelcomeViewController {
+                welcomeName.userName = userOne.person.name
+                welcomeName.userSecondName = userOne.person.secondName
+                
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
+                aboutUserVC.aboutMeName = userOne.person.name
+                aboutUserVC.aboutMeSecondName = userOne.person.secondName
+            }
+        }
     }
     
     @IBAction func logInPressed() {
-        guard userNameText.text == user, passwordText.text == password else {
+        guard userNameText.text == userOne.login, passwordText.text == userOne.password else {
             showAlert(
                 with: "Invalid login or password",
                 and: "Please, enter correct login and password"
