@@ -21,11 +21,5 @@ class AboutMeViewController: UIViewController {
         super.viewDidLoad()
         titleName.prompt = "\(aboutMeName) \(aboutMeSecondName)"
         userImage.image = imageView
-
-        
     }
-    
-
-   
-
 }

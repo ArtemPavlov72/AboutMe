@@ -26,6 +26,9 @@ class LoginViewController: UIViewController {
                 welcomeName.userName = userOne.person.name
                 welcomeName.userSecondName = userOne.person.secondName
                 
+            } else if let mainInfo = viewController as? MainInfoViewController {
+                mainInfo.nameInfoVC = userOne.person.name
+                
             } else if let navigationVC = viewController as? UINavigationController {
                 let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
                 aboutUserVC.aboutMeName = userOne.person.name
@@ -34,6 +37,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+    // MARK: IBAction
     @IBAction func logInPressed() {
         guard userNameText.text == userOne.login, passwordText.text == userOne.password else {
             showAlert(

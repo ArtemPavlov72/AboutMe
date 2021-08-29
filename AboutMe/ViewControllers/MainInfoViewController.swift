@@ -8,14 +8,17 @@
 import UIKit
 
 class MainInfoViewController: UIViewController {
-
-    @IBOutlet var backMainInfo: UINavigationItem!
     
-  
+    @IBOutlet var nameMainInfo: UILabel!
+    @IBOutlet var secondNameMainInfo: UILabel!
+    @IBOutlet var dateOfBirthdayMainInfo: UILabel!
+    @IBOutlet var cityLivedMainInfo: UILabel!
+    
+    var nameInfoVC = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        nameMainInfo.text = "Имя: \(nameInfoVC)"
 
      
     }
